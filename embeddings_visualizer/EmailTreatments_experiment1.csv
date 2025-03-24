@@ -1,0 +1,8 @@
+pyLabel,pyName,pyGroup,pyIssue,StartDate,EndDate,pyEmailSubject,pyDeliverOffline,pySpecifyEmailSubject,pyTemplateName,pyTemplateType,TreatmentKeyCode,EligibilityConditions,pyIsPropositionActive,SourceRuleSetName,SourceRuleSetVersion,PlacementType,TreatmentType,Language,ApplyInheritedEligibility
+Generic Addon Promotion,GenericAddonPromotion,All,All,,,Subject line 2,TRUE,TRUE,TemplateOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,,External,,TRUE
+Generic Addon Promotion Flex,Generic Addon Promotion Flex,All,All,,,DB template,TRUE,TRUE,SampleOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,Flex,External,,TRUE
+Generic Addon Promotion Flex,Generic Addon Promotion Hero,All,All,,,DB template,TRUE,TRUE,SampleOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,Hero,External,,TRUE
+Generic Flex Banner,Generic Flex Banner,All,All,,,DB template,TRUE,TRUE,TemplateOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,Flex,External,,TRUE
+Parent Action Treatment,Parent Action Treatment,All,All,,,Subject line,TRUE,TRUE,SampleOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,,External,,TRUE
+Generic Hero Banner,Generic Hero Banner,All,All,,,DB template,TRUE,TRUE,TemplateOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,Hero,External,,TRUE
+Generic Email Template,Generic Email Template,All,All,,,Subject line 1,TRUE,TRUE,TemplateOutput,DB,DB template,,Always,MerkleFr-Artifacts,01/01/2001,,External,,FALSE

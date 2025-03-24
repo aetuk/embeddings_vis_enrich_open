@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+
+  streamlit:
+    container_name: streamlit
+    restart: always
+    expose:
+      - "8501"
+    build: ./embeddings_visualizer
+    command: streamlit run app.py --browser.gatherUsageStats false
+
+  nginx:
+    restart: always
+    image: nginx:1.15-alpine
+    ports:
+      - "8443:8443"
+      - "8083:8083"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./certbot/www:/usr/share/nginx/html
+      - certbot-etc:/etc/letsencrypt
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    container_name: certbot2
+    image: certbot/certbot
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - ./certbot/www:/usr/share/nginx/html
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html --email admin@embeds.decisionhub.xyz --agree-tos --no-eff-email --force-renewal -d embeds.decisionhub.xyz
+
+volumes:
+  certbot-etc:
