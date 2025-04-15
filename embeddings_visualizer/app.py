@@ -14,8 +14,7 @@ from sklearn.decomposition import PCA
 import openai
 
 import requests, json
-
-  
+ 
 
 load_dotenv(find_dotenv())
 
@@ -28,6 +27,8 @@ st.title("Text Embeddings Visualization")
 uploaded_file = st.file_uploader("Choose a file")
 
 # TODO Check key before choosing file 
+
+
 
 if uploaded_file:
     
@@ -80,15 +81,20 @@ if uploaded_file:
 
             # TODO - select method here
             # return matrix
-            api_type = os.getenv("OPENAI_API_TYPE", "openai")
-            if api_type == "openai":
-                matrix = get_embeddings(
-                    df_filtered[answer_column].to_list(), engine="text-embedding-ada-002"
-                )
-            elif api_type == "azure":
-                deployment_name = os.getenv("OPENAI_AZURE_DEPLOYMENT_NAME")
-                embeddings = OpenAIEmbeddings(deployment=deployment_name)
-                matrix = embeddings.embed_query(df_filtered[answer_column].to_list())
+          #  api_type = os.getenv("OPENAI_API_TYPE", "openai")
+         #   if api_type == "openai":
+         #       matrix = get_embeddings(
+         #           df_filtered[answer_column].to_list(), engine="text-embedding-ada-002"
+        #        )
+        #    elif api_type == "azure":
+         #       deployment_name = os.getenv("OPENAI_AZURE_DEPLOYMENT_NAME")
+        #        embeddings = OpenAIEmbeddings(deployment=deployment_name)
+           #     matrix = embeddings.embed_query(df_filtered[answer_column].to_list())
+        
+            df = df[df[answer_column].notna()]
+            
+            matrix = return_emb(df,answer_column)
+              
 
             dimension_int = int(dimension_str)
             pca = PCA(n_components=dimension_int)
@@ -171,3 +177,44 @@ if uploaded_file:
             )
         else:
             st.write("**:red[" + lic_function_results + "]**")
+            
+                       
+# return_emb function start
+
+def return_emb(df,answer):
+    headers = {
+    'x-service-line': 'cxm',
+    'x-brand': 'dentsu',
+    'x-project': 'test1',
+    'Content-Type': 'application/json',
+    'Cache-Control': 'no-cache',
+    'api-version': 'v15',
+    'Ocp-Apim-Subscription-Key': os.environ.get("OPENAI_API_KEY"),
+    }
+    
+    url = os.environ.get("AZURE_URL")
+    matrixblock = None
+
+    for index, row in df.iterrows():
+        data = {"input": row[answer], "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
+        r = requests.post(
+            url, 
+            json=data, 
+            headers=headers
+        )
+        
+        # Parse json to get the matrix here
+        matrixtemp = json.loads(r.text)
+        # matrixtemp = matrixtemp[1:-1]
+        matrixtemp = str(matrixtemp['data'][0]['embedding'])
+        
+        #print(matrixtemp['data'])
+        if matrixblock :
+            matrixblock = matrixtemp + "," + matrixblock
+        else:
+            matrixblock = matrixtemp
+            
+        matrix = "[" + matrixblock + "]"
+        matrix = ast.literal_eval(matrix)
+
+    return matrix
