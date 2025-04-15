@@ -8,7 +8,8 @@ import streamlit as st
 from dotenv import find_dotenv, load_dotenv
 #from langchain.embeddings import OpenAIEmbeddings
 from langchain_community.embeddings import OpenAIEmbeddings
-from openai.embeddings_utils import get_embeddings
+#from openai.embeddings_utils import get_embeddings
+from embeddings_utils import get_embeddings
 from sklearn.decomposition import PCA
 import openai
 
