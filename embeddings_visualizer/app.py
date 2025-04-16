@@ -9,7 +9,7 @@ from dotenv import find_dotenv, load_dotenv
 #from langchain.embeddings import OpenAIEmbeddings
 from langchain_community.embeddings import OpenAIEmbeddings
 #from openai.embeddings_utils import get_embeddings
-from embeddings_utils import get_embeddings
+
 from sklearn.decomposition import PCA
 import openai
 
@@ -18,7 +18,9 @@ import requests, json
 
 load_dotenv(find_dotenv())
 
-openai.api_key = os.environ["OPENAI_API_KEY"]
+api_key = os.environ["OPENAI_API_KEY"]
+
+from embeddings_utils import get_embeddings
 
 st.set_page_config(layout="wide")
 
@@ -27,7 +29,45 @@ st.title("Text Embeddings Visualization")
 uploaded_file = st.file_uploader("Choose a file")
 
 # TODO Check key before choosing file 
+def return_emb(df,answer):
+    headers = {
+    'x-service-line': 'cxm',
+    'x-brand': 'dentsu',
+    'x-project': 'test1',
+    'Content-Type': 'application/json',
+    'Cache-Control': 'no-cache',
+    'api-version': 'v15',
+    'Ocp-Apim-Subscription-Key': os.environ.get("OPENAI_API_KEY"),
+    }
+    
+    url = os.environ.get("AZURE_URL")
+    matrixblock = None
 
+    for index, row in df.iterrows():
+        data = {"input": row[answer], "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
+        r = requests.post(
+            url, 
+            json=data, 
+            headers=headers
+        )
+        
+        # Parse json to get the matrix here
+        matrixtemp = json.loads(r.text)
+        # matrixtemp = matrixtemp[1:-1]
+        matrixtemp = str(matrixtemp['data'][0]['embedding'])
+        
+        #print(matrixtemp['data'])
+        if matrixblock :
+            matrixblock = matrixtemp + "," + matrixblock
+        else:
+            matrixblock = matrixtemp
+            
+        matrix = "[" + matrixblock + "]"
+        
+        import ast
+        matrix = ast.literal_eval(matrix)
+
+    return matrix
 
 
 if uploaded_file:
@@ -62,7 +102,7 @@ if uploaded_file:
     df_filtered = df[[category_column, answer_column]].dropna()
     st.write(f"The DataFrame has {df_filtered.shape[0]} rows after filtering.")
 
-    if st.button("Compute embeddings and plot", disabled=disable_button):
+    if st.button("Compute embeddings and plot"):
         
         # TODO - activate key here
         lic_function_results = "valid"
@@ -181,40 +221,3 @@ if uploaded_file:
                        
 # return_emb function start
 
-def return_emb(df,answer):
-    headers = {
-    'x-service-line': 'cxm',
-    'x-brand': 'dentsu',
-    'x-project': 'test1',
-    'Content-Type': 'application/json',
-    'Cache-Control': 'no-cache',
-    'api-version': 'v15',
-    'Ocp-Apim-Subscription-Key': os.environ.get("OPENAI_API_KEY"),
-    }
-    
-    url = os.environ.get("AZURE_URL")
-    matrixblock = None
-
-    for index, row in df.iterrows():
-        data = {"input": row[answer], "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
-        r = requests.post(
-            url, 
-            json=data, 
-            headers=headers
-        )
-        
-        # Parse json to get the matrix here
-        matrixtemp = json.loads(r.text)
-        # matrixtemp = matrixtemp[1:-1]
-        matrixtemp = str(matrixtemp['data'][0]['embedding'])
-        
-        #print(matrixtemp['data'])
-        if matrixblock :
-            matrixblock = matrixtemp + "," + matrixblock
-        else:
-            matrixblock = matrixtemp
-            
-        matrix = "[" + matrixblock + "]"
-        matrix = ast.literal_eval(matrix)
-
-    return matrix
