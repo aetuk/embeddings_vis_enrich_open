@@ -43,38 +43,43 @@ def return_emb(df,answer):
     url = os.environ.get("AZURE_URL")
     matrixblock = None
 
-    for index, row in df.iterrows():
-        data = {"input": row[answer], "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
-        r = requests.post(
+   
+    input_data = [row[answer] for index, row in df.iterrows()]
+
+    data = {"input": input_data, "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
+
+
+    r = requests.post(
             url, 
             json=data, 
             headers=headers
         )
         
-        # Parse json to get the matrix here
-        matrixtemp = json.loads(r.text)
-        # matrixtemp = matrixtemp[1:-1]
-        matrixtemp = str(matrixtemp['data'][0]['embedding'])
-        
-        #print(matrixtemp['data'])
-        if matrixblock :
-            matrixblock = matrixtemp + "," + matrixblock
+    # Parse json to get the matrix here
+    matrixtemp = json.loads(r.text)
+
+    matrixtemp_arr = matrixtemp['data']
+
+    for matrixtemprow in matrixtemp_arr:
+        if matrixblock:
+            matrixblock = str(matrixtemprow['embedding']) + "," + str(matrixblock)
         else:
-            matrixblock = matrixtemp
-            
-        matrix = "[" + matrixblock + "]"
-        
-        import ast
-        matrix = ast.literal_eval(matrix)
+            matrixblock = matrixtemprow['embedding']
+
+    matrix = "[" + matrixblock + "]"
+    
+    import ast
+    matrix = ast.literal_eval(matrix)
 
     return matrix
+
 
 
 if uploaded_file:
     
     disable_button = True
     
-    python_or_rest = st.checkbox("Use Python Embeddings API")
+    python_or_rest = st.checkbox("Use Python Embeddings API (WIP)")
     delimiter = st.text_input("Enter the delimiter", ",")
     drop_na = st.checkbox("Drop rows with N/A values")
     drop_duplicates = st.checkbox("Drop duplicate rows")
