@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 from dotenv import find_dotenv, load_dotenv
 #from langchain.embeddings import OpenAIEmbeddings
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.embeddings import AzureOpenAIEmbeddings, OpenAIEmbeddings
 #from openai.embeddings_utils import get_embeddings
 
 from sklearn.decomposition import PCA
@@ -74,8 +74,8 @@ if uploaded_file:
     
     disable_button = True
     
-    
-    delimiter = st.text_input("Enter the delimiter", ";")
+    python_or_rest = st.checkbox("Use Python Embeddings API")
+    delimiter = st.text_input("Enter the delimiter", ",")
     drop_na = st.checkbox("Drop rows with N/A values")
     drop_duplicates = st.checkbox("Drop duplicate rows")
     df = pd.read_csv(uploaded_file, delimiter=delimiter)
@@ -112,28 +112,28 @@ if uploaded_file:
         if "valid" in lic_function_results: 
             disable_button = False
             st.write("**:green[" + lic_function_results + "]**")
-
-            #Indent start here for valid if
-            
-            #TODO - get top 50 records for starter license
         
             categories = sorted(df_filtered[category_column].unique())
 
-            # TODO - select method here
-            # return matrix
-          #  api_type = os.getenv("OPENAI_API_TYPE", "openai")
-         #   if api_type == "openai":
-         #       matrix = get_embeddings(
-         #           df_filtered[answer_column].to_list(), engine="text-embedding-ada-002"
-        #        )
-        #    elif api_type == "azure":
-         #       deployment_name = os.getenv("OPENAI_AZURE_DEPLOYMENT_NAME")
-        #        embeddings = OpenAIEmbeddings(deployment=deployment_name)
-           #     matrix = embeddings.embed_query(df_filtered[answer_column].to_list())
-        
-            df = df[df[answer_column].notna()]
-            
-            matrix = return_emb(df,answer_column)
+            if python_or_rest:
+                # TODO - select method here
+                # return matrix
+                api_type = os.getenv("OPENAI_API_TYPE", "openai")
+                if api_type == "openai":
+                    matrix = get_embeddings(
+                        df_filtered[answer_column].to_list(), engine="text-embedding-ada-002"
+                    )
+                elif api_type == "azure":
+                   deployment_name = os.getenv("OPENAI_AZURE_DEPLOYMENT_NAME")
+                   embeddings = AzureOpenAIEmbeddings(model="text-embedding-ada-002"
+                   ,azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT")
+                   ,chunk_size=1
+                   ,validate_base_url=False
+                   ,deployment=deployment_name)
+                   matrix = embeddings.embed_query(df_filtered[answer_column].to_list())
+            else:
+                df = df[df[answer_column].notna()]
+                matrix = return_emb(df,answer_column)
               
 
             dimension_int = int(dimension_str)
