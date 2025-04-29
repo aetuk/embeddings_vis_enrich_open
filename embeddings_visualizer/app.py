@@ -46,7 +46,7 @@ def return_emb(df,answer):
    
     input_data = [row[answer] for index, row in df.iterrows()]
 
-    data = {"input": input_data, "user": "string", "input_type": "query","encoding_format": "float","dimensions": 1}
+    data = {"input": input_data, "user": "string", "input_type": "query","encoding_format": "float"}
 
 
     r = requests.post(
@@ -83,6 +83,7 @@ if uploaded_file:
     delimiter = st.text_input("Enter the delimiter", ",")
     drop_na = st.checkbox("Drop rows with N/A values")
     drop_duplicates = st.checkbox("Drop duplicate rows")
+    drop_other_columns = st.checkbox("Drop all columns except content id and vector columns")
     df = pd.read_csv(uploaded_file, delimiter=delimiter)
     
 
@@ -94,11 +95,14 @@ if uploaded_file:
 
     columns = df.columns.tolist()
     
-    dimensionslist = ['3', '8', '32']
+    dimensionslist = ['3', '8', '32', 'All']
+
+    if drop_other_columns:
+        id_column = st.selectbox("Choose a column for content id:", columns)
 
     category_column = st.selectbox("Choose a column for categories:", columns)
-    answer_column = st.selectbox("Choose a column for answers:", columns)
-    dimension_str = st.selectbox("Choose a number of dimensions for answers:", dimensionslist, index=0)
+    answer_column = st.selectbox("Choose a column for vectors:", columns)
+    dimension_str = st.selectbox("Choose a number of dimensions for vectors:", dimensionslist, index=0)
     
     # Remove rows with empty answer_column
     df = df.loc[pd.notnull(df[answer_column])]
@@ -141,10 +145,14 @@ if uploaded_file:
                 matrix = return_emb(df,answer_column)
               
 
-            dimension_int = int(dimension_str)
-            pca = PCA(n_components=dimension_int)
-            vis_dims = pca.fit_transform(matrix)
-            df_filtered["embed_vis"] = vis_dims.tolist()
+            if "All" in dimension_str:
+                vis_dims = matrix
+                df_filtered["embed_vis"] = vis_dims
+            else:
+                dimension_int = int(dimension_str)
+                pca = PCA(n_components=dimension_int)
+                vis_dims = pca.fit_transform(matrix)
+                df_filtered["embed_vis"] = vis_dims.tolist()
 
             cmap = px.colors.qualitative.Plotly
             fig = go.Figure()
@@ -187,8 +195,11 @@ if uploaded_file:
             
             # TODO : Add option to export file
             
-            # Add embeds to input file
-            df1 = pd.DataFrame( vis_dims.tolist())
+           # Add embeds to input file
+            if "All" in dimension_str:
+               df1 = pd.DataFrame( vis_dims)
+            else:
+               df1 = pd.DataFrame( vis_dims.tolist())
             
             #TODO - replace with column creator
             
@@ -203,6 +214,11 @@ if uploaded_file:
             
             results = df.join(df1)
             
+            if drop_other_columns: 
+                columns = [id_column]
+                columns.extend(dim_col)
+                results = results[columns]
+
             @st.cache_data
             def convert_df(df):
                 return df.to_csv(index=False).encode('utf-8')
