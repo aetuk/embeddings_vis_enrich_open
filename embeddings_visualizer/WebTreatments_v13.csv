@@ -1,0 +1,58 @@
+pyLabel,pyName,pyGroup,pyIssue,Category,TreatmentWeight,ContentFormat,PlacementType,Height,Width,ImageURL,StartDate,EndDate,ClickThroughURL,EligibilityConditions,Language,SourceRuleSetVersion,SourceRuleSetName,ApplyInheritedEligibility,pyIsPropositionActive,TreatmentType,Headline
+Savings Account,Savings Account,,,Savings,,Image,Tile,600,600,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,01/01/2001,DentsuMerkleFWp-Artifacts,TRUE,Always,Web,
+Mobile Banking - Your Bank in Your Hands,TC002,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer3.jpg,,,,,en_gb,01/01/2001,DentsuMerkleFWp-Artifacts,TRUE,Always,Web,Mobile Banking - Your Bank in Your Hands
+Regular Home Saver,TC003,,,Savings,,Image,Tile,600,600,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,en_gb,01/01/2001,DentsuMerkleFWp-Artifacts,TRUE,Always,Web,Regular Home Saver
+Free Business Banking Offer Expires Soon,TC004,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Free Business Banking Offer Expires Soon
+Use your ISA Allowance now before you lose it,TC009,,,Savings,,,Tile,,,,,,,,,,,,Always,Web,Use your ISA Allowance now before you lose it
+You haven't used your Gold Mastercard for a while,TC011,,,Credit Cards,,,Tile,,,,,,,,,,,,Always,Web,You haven't used your Gold Mastercard for a while
+Get in touch for all your Business Banking needs,TC013,,,Current Account,,,Tile,,,,,,,,,,,,Always,Web,Get in touch for all your Business Banking needs
+Helping you buy your first home in the place you love.,TC016,,,Mortgage,,,Tile,,,,,,,,,,,,Always,Web,Helping you buy your first home in the place you love.
+Rapport Security Software,TC017,,,Security Message,,,Tile,,,,,,,,,,,,Always,Web,Rapport Security Software
+Mortgage Offers for Remortgaging,TC019,,,Mortgage,,,Tile,,,,,,,,,,,,Always,Web,Mortgage Offers for Remortgaging
+There are lots of ways to stay in touch,TC021,,,Service,,,Tile,,,,,,,,,,,,Always,Web,There are lots of ways to stay in touch
+Mobile Banking - Your Bank in Your Hands,TC022,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Mobile Banking - Your Bank in Your Hands
+Mortgage Payment Tips,TC035,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/main-offer.jpg,,,,,,01/01/2001,DentsuMerkleFWp-Artifacts,TRUE,Always,Web,Mortgage Payment Tips
+Welcome to your new Mortgage,TC051,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer3.jpg,,,,,,01/01/2001,DentsuMerkleFWp-Artifacts,TRUE,Always,Web,Welcome to your new Mortgage
+Welcome to your new Current Account Direct,TC056,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Welcome to your new Current Account Direct
+Welcome to your new Current Account Direct,TC057,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Welcome to your new Current Account Direct
+Current Account Direct - Debit Card and PIN,TC058,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Current Account Direct - Debit Card and PIN
+Important information,TC059,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Important information
+Important information,TC060,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Important information
+Important information,TC061,,,Service,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Important information
+Important information,TC062,,,Service,,,Tile,,,,,,,,,,,,Always,Web,Important information
+Unlock exclusive benefits with our Rewards credit card today!,TC063_formal,,,Rewards Credit Card,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-1.jpg,,,,,,,,,Always,Web,Unlock exclusive benefits with our Rewards credit card today!
+Unlock endless perks with our Rewards credit card!,TC064_cheerful,,,Rewards Credit Card,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-1.jpg,,,,,,,,,Always,Web,Unlock endless perks with our Rewards credit card!
+Rewards Card: Earn Points Faster Than You Can Spend Them!,TC065_Humorous,,,Rewards Credit Card,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-1.jpg,,,,,,,,,Always,Web,Rewards Card: Earn Points Faster Than You Can Spend Them!
+Unlock Your Dream Home with Our Competitive Home Loan Rates,TC066_formal,,,Home Loans,,,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer3.jpg,,,,,,,,,Always,Web,Unlock Your Dream Home with Our Competitive Home Loan Rates
+Unlock your dream home with our unbeatable loan rates!,TC067_cheerful,,,Home Loans,,,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer3.jpg,,,,,,,,,Always,Web,Unlock your dream home with our unbeatable loan rates!
+Get a home loan before your plants start paying rent!,TC068_Humorous,,,Home Loans,,,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer3.jpg,,,,,,,,,Always,Web,Get a home loan before your plants start paying rent!
+Experience unparalleled luxury with our Platinum credit card.,TC069_formal,,,Platinum Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-2.jpg,,,,,,,,,Always,Web,Experience unparalleled luxury with our Platinum credit card.
+Unlock exclusive perks with our Platinum credit card today!,TC070_cheerful,,,Platinum Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-2.jpg,,,,,,,,,Always,Web,Unlock exclusive perks with our Platinum credit card today!
+Platinum Card: For When Your Wallet Needs a Little Bling!,TC071_Humorous,,,Platinum Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-2.jpg,,,,,,,,,Always,Web,Platinum Card: For When Your Wallet Needs a Little Bling!
+Unlock Exclusive Travel Rewards with Our Premium Credit Card,TC072_formal,,,Travel Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-3.jpg,,,,,,,,,Always,Web,Unlock Exclusive Travel Rewards with Our Premium Credit Card
+Unlock your next trip with our exclusive travel credit card!,TC073_cheerful,,,Travel Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-3.jpg,,,,,,,,,Always,Web,Unlock your next trip with our exclusive travel credit card!
+Travel Card: Your Passport to Fun and Freebies!,TC074_Humorous,,,Travel Credit cards,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/category-card-3.jpg,,,,,,,,,Always,Web,Travel Card: Your Passport to Fun and Freebies!
+Secure Your Financial Future with Our Regular Savings Plan.,TC075_formal,,,regular Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Secure Your Financial Future with Our Regular Savings Plan.
+"Save Today, Smile Tomorrow: Your Future Looks Bright!",TC076_cheerful,,,regular Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,"Save Today, Smile Tomorrow: Your Future Looks Bright!"
+Regular Savings: Because Even Pennies Deserve a Cozy Home!,TC077_Humorous,,,regular Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Regular Savings: Because Even Pennies Deserve a Cozy Home!
+Exclusive Savings Offer: Limited Time Only!,TC078_formal,,,premier Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Exclusive Savings Offer: Limited Time Only!
+Save big with our exclusive premier savings offer!,TC079_cheerful,,,premier Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Save big with our exclusive premier savings offer!
+Save big  with our premier deal.Your wallet will thank you!,TC080_Humorous,,,premier Savings,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Save big  with our premier deal.Your wallet will thank you!
+Unlock Your Financial Potential with Our Retail Loan Offer,TC081_formal,,,Retail loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/main-offer.jpg,,,,,,,,,Always,Web,Unlock Your Financial Potential with Our Retail Loan Offer
+Get the retail loan you need with a smile!,TC082_cheerful,,,Retail loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/main-offer.jpg,,,,,,,,,Always,Web,Get the retail loan you need with a smile!
+"Get a loan, because adulting is hard and so is paying for it!",TC083_Humorous,,,Retail loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/main-offer.jpg,,,,,,,,,Always,Web,"Get a loan, because adulting is hard and so is paying for it!"
+Lock in a low rate with our Fixed Loan offer today!,TC084_formal,,,Fixed loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Lock in a low rate with our Fixed Loan offer today!
+Lock in your dream rate with our fixed loan offer today!,TC085_cheerful,,,Fixed loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Lock in your dream rate with our fixed loan offer today!
+Fixed Loan: Because Your Wallet Deserves a Steady Diet!,TC086_Humorous,,,Fixed loan,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer2.jpg,,,,,,,,,Always,Web,Fixed Loan: Because Your Wallet Deserves a Steady Diet!
+Maximize Your Savings Potential with Our Competitive ISA Offer!,TC087_formal,,,ISA saving,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Maximize Your Savings Potential with Our Competitive ISA Offer!
+Start saving smart with our high-interest ISA offer!,TC088_cheerful,,,ISA saving,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,Start saving smart with our high-interest ISA offer!
+ISA Savings: Watch Your Money Grow Without the Drama!,TC089_Humorous,,,ISA saving,,Image,Tile,,,http://clo1prpc91:8443/retail_bank/img/offer1.jpg,,,,,,,,,Always,Web,ISA Savings: Watch Your Money Grow Without the Drama!
+Maximize Your Returns with Our Exclusive Investment Opportunity,TC090_formal,,,investment,,,Tile,,,,,,,,,,,,Always,Web,Maximize Your Returns with Our Exclusive Investment Opportunity
+Invest Today: Your Future Self Will Thank You!,TC091_cheerful,,,investment,,,Tile,,,,,,,,,,,,Always,Web,Invest Today: Your Future Self Will Thank You!
+"Double your money, half the stress - invest with us today!",TC092_Humorous,,,investment,,,Tile,,,,,,,,,,,,Always,Web,"Double your money, half the stress - invest with us today!"
+Elevate Your Portfolio with Our Premier Investment Solutions.,TC093_formal,,,premier investment ,,,Tile,,,,,,,,,,,,Always,Web,Elevate Your Portfolio with Our Premier Investment Solutions.
+Premier Investment: Brighten Your Future with Smart Choices!,TC094_cheerful,,,premier investment ,,,Tile,,,,,,,,,,,,Always,Web,Premier Investment: Brighten Your Future with Smart Choices!
+Premier Investment. Because Your Money needs the VIP Treatment!,TC095_Humorous,,,premier investment ,,,Tile,,,,,,,,,,,,Always,Web,Premier Investment. Because Your Money needs the VIP Treatment!
+Secure Your Future with Our Pension Investment Plan,TC096_formal,,,Pension investment,,,Tile,,,,,,,,,,,,Always,Web,Secure Your Future with Our Pension Investment Plan
+Secure your future with our joyful pension investment plan!,TC097_cheerful,,,Pension investment,,,Tile,,,,,,,,,,,,Always,Web,Secure your future with our joyful pension investment plan!
+"Pension Investment: Secure Your Future, One Laugh at a Time!",TC098_Humorous,,,Pension investment,,,Tile,,,,,,,,,,,,Always,Web,"Pension Investment: Secure Your Future, One Laugh at a Time!"

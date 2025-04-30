@@ -1,37 +1,37 @@
 ,pyName,Prompts,content
-0,TC066_formal,"as a marketing person, create a Home Loan offer headline in formal tone in less than 64 characters",Unlock Your Dream Home: Exclusive Limited-Time Home Loan Offer!
-1,TC067_cheerful,"as a marketing person, create a Home Loan offer headline in cheerful tone in less than 64 characters",Unlock Your Dream Home: Get a Sunshine-Filled Home Loan!
-2,TC068_Humorous,"as a marketing person, create a Home Loan offer headline in Humorous tone in less than 64 characters","Unlock Your Dream Home: Get a Loan, Skip the In-Laws!"
-3,TC081_formal,"as a marketing person, create a Retail loan offer headline in formal tone in less than 64 characters",Unlock Your Dreams: Exclusive Retail Loan Offer Now Available!
-4,TC082_cheerful,"as a marketing person, create a Retail loan offer headline in cheerful tone in less than 64 characters","Shop Now, Pay Later! Get a Retail Loan & Bring Home Happiness!"
-5,TC083_Humorous,"as a marketing person, create a Retail loan offer headline in Humorous tone in less than 64 characters","Get a Retail Loan and Shop 'Til You Drop, Without Dropping Your Savings!"
-6,TC084_formal,"as a marketing person, create a Fixed loan offer headline in formal tone in less than 64 characters",Secure Your Future with Our Low-Risk Fixed Loan
-7,TC085_cheerful,"as a marketing person, create a Fixed loan offer headline in cheerful tone in less than 64 characters",Unlock Your Dreams with Our Fixed Loan: Brighten Your Future!
-8,TC086_Humorous,"as a marketing person, create a Fixed loan offer headline in Humorous tone in less than 64 characters",Lock in your loan and laugh all the way to the bank!
-9,TC069_formal,"as a marketing person, create a Platinum credit card offer headline in formal tone in less than 64 characters",Unlock Exclusive Benefits with Our Elite Platinum Credit Card!
-10,TC070_cheerful,"as a marketing person, create a Platinum credit card offer headline in cheerful tone in less than 64 characters",Unlock Limitless Luxury with our Platinum Card - Elevate Your Lifestyle!
-11,TC071_Humorous,"as a marketing person, create a Platinum credit card offer headline in Humorous tone in less than 64 characters",Unleash your inner money magnet with our Platinum card – because even your wallet deserves a touch of bling!
-12,TC072_formal,"as a marketing person, create a Travel credit card offer headline in formal tone in less than 64 character",Unlock Unforgettable Journeys: Discover Our Exclusive Travel Credit Card!
-13,TC073_cheerful,"as a marketing person, create a Travel credit card offer headline in cheerful tone in less than 64 characters",Jetset with Joy! Unlock Limitless Adventures with Our Travel Credit Card!
-14,TC074_Humorous,"as a marketing person, create a Travel credit card offer headline in Humorous tone in less than 64 characters","Jet-set in style, earn miles and ditch the luggage fees!"
-15,TC063_formal,"as a marketing person, create a Rewards credit card offer headline in formal tone in less than 64 characters",Unlock Exclusive Benefits with Our Elite Rewards Credit Card
-16,TC064_cheerful,"as a marketing person, create a Rewards credit card offer headline in cheerful tone in less than 64 characters",Unlock Joyful Perks with Our Rewards Card!
-17,TC065_Humorous,"as a marketing person, create a Rewards credit card offer headline in Humorous tone in less than 64 characters",Get Rewarded for Spending & Laughing: The Credit Card that Puts a Smile on Your Face!
-18,TC075_formal,"as a marketing person, create a regular saving offer headline in formal tone in less than 64 characters",Secure Your Future: Unlock Exclusive Savings with Our Regular Saving Plan!
-19,TC076_cheerful,"as a marketing person, create a regular saving offer headline in cheerful tone in less than 64 characters","Save Smarter, Smile Brighter with our Happy Savings Club!"
-20,TC077_Humorous,"as a marketing person, create a regular saving offer headline in Humorous tone in less than 64 characters","Save like a boss, without breaking the bank!"
-21,TC078_formal,"as a marketing person, create a premier saving offer headline in formal tone in less than 64 characters",Exclusive Savings: Unbeatable Premier Offer!
-22,TC079_cheerful,"as a marketing person, create a premier saving offer headline in cheerful tone in less than 64 characters",Save Big & Smile Bright! Premier Savings Await!
-23,TC080_Humorous,"as a marketing person, create a premier saving offer headline in Humorous tone in less than 64 characters",Save like a boss! Get the ultimate premier deal!
-24,TC087_formal,"as a marketing person, create a ISA saving offer headline in formal tone in less than 64 characters",Maximize Your Savings with our Exclusive ISA Offer!
-25,TC088_cheerful,"as a marketing person, create a ISA saving offer headline in cheerful tone in less than 64 characters",Supercharge Your Savings with our Jolly ISA Bonanza!
-26,TC089_Humorous,"as a marketing person, create a ISA saving offer headline in Humorous tone in less than 64 characters","Double Your Dough, No Monkey Business: Laugh All the Way to the ISA Bank!"
-27,TC090_formal,"as a marketing person, create a investment offer headline in formal tone in less than 64 characters",Maximize Your Wealth with Our Exclusive Investment Opportunity!
-28,TC091_cheerful,"as a marketing person, create a investment offer headline in cheerful tone in less than 64 characters",Double Your Money with Our Sunny Investment Opportunity!
-29,TC092_Humorous,"as a marketing person, create a investment offer headline in Humorous tone in less than 64 characters","Double your money, half the stress! Invest with us and laugh all the way to the bank!"
-30,TC093_formal,"as a marketing person, create a premier investment offer headline in formal tone in less than 64 characters",Unveiling Exclusive Investment Opportunity: Elevate Your Portfolio with Premier Returns!
-31,TC094_cheerful,"as a marketing person, create a premier investment offer headline in cheerful tone in less than 64 characters",Unlock Your Financial Dreams with our Premier Investment Opportunity!
-32,TC095_Humorous,"as a marketing person, create a premier investment offer headline in Humorous tone in less than 64 characters","Double Your Money, Half the Effort! Invest in our Premier Offer Today!"
-33,TC096_formal,"as a marketing person, create a Pension investment offer headline in formal tone in less than 64 characters",Secure Your Future: Maximize Retirement Wealth with Our Pension Investment Plan
-34,TC097_cheerful,"as a marketing person, create a Pension investment offer headline in cheerful tone in less than 64 characters",Secure Your Golden Years with Joyful Pension Investments!
-35,TC098_Humorous,"as a marketing person, create a Pension investment offer headline in Humorous tone in less than 64 characters",Retire in Style: Let Your Money Do the Cha-Ching!
+0,TC066_formal,"as a marketing person, create a Home Loan offer headline in formal tone in less than 64 characters",Unlock Your Dream Home with Our Competitive Home Loan Rates
+1,TC067_cheerful,"as a marketing person, create a Home Loan offer headline in cheerful tone in less than 64 characters",Unlock your dream home with our unbeatable loan rates!
+2,TC068_Humorous,"as a marketing person, create a Home Loan offer headline in Humorous tone in less than 64 characters",Get a home loan before your plants start paying rent!
+3,TC081_formal,"as a marketing person, create a Retail loan offer headline in formal tone in less than 64 characters",Unlock Your Financial Potential with Our Retail Loan Offer
+4,TC082_cheerful,"as a marketing person, create a Retail loan offer headline in cheerful tone in less than 64 characters",Get the retail loan you need with a smile!
+5,TC083_Humorous,"as a marketing person, create a Retail loan offer headline in Humorous tone in less than 64 characters","Get a loan, because adulting is hard and so is paying for it!"
+6,TC084_formal,"as a marketing person, create a Fixed loan offer headline in formal tone in less than 64 characters",Lock in a low rate with our Fixed Loan offer today!
+7,TC085_cheerful,"as a marketing person, create a Fixed loan offer headline in cheerful tone in less than 64 characters",Lock in your dream rate with our fixed loan offer today!
+8,TC086_Humorous,"as a marketing person, create a Fixed loan offer headline in Humorous tone in less than 64 characters",Lock in your rate and laugh all the way to the bank with our fixed loan offer!
+9,TC069_formal,"as a marketing person, create a Platinum credit card offer headline in formal tone in less than 64 characters",Experience unparalleled luxury with our Platinum credit card.
+10,TC070_cheerful,"as a marketing person, create a Platinum credit card offer headline in cheerful tone in less than 64 characters",Unlock exclusive perks with our Platinum credit card today!
+11,TC071_Humorous,"as a marketing person, create a Platinum credit card offer headline in Humorous tone in less than 64 characters",Get ready to feel like a VIP with our Platinum credit card - because who needs gold when you can have platinum?
+12,TC072_formal,"as a marketing person, create a Travel credit card offer headline in formal tone in less than 64 character",Unlock Exclusive Travel Rewards with Our Premium Credit Card
+13,TC073_cheerful,"as a marketing person, create a Travel credit card offer headline in cheerful tone in less than 64 characters",Unlock your next adventure with our exclusive travel credit card!
+14,TC074_Humorous,"as a marketing person, create a Travel credit card offer headline in Humorous tone in less than 64 characters","Get ready to jet set with our travel credit card - earn miles, not frowns!"
+15,TC063_formal,"as a marketing person, create a Rewards credit card offer headline in formal tone in less than 64 characters",Unlock exclusive benefits with our Rewards credit card today!
+16,TC064_cheerful,"as a marketing person, create a Rewards credit card offer headline in cheerful tone in less than 64 characters",Unlock endless perks with our Rewards credit card!
+17,TC065_Humorous,"as a marketing person, create a Rewards credit card offer headline in Humorous tone in less than 64 characters","Swipe, earn, repeat: Get rewarded for your shopping addiction with our awesome credit card!"
+18,TC075_formal,"as a marketing person, create a regular saving offer headline in formal tone in less than 64 characters",Secure your financial future with our exclusive regular saving offer
+19,TC076_cheerful,"as a marketing person, create a regular saving offer headline in cheerful tone in less than 64 characters",Start saving today and watch your money grow! 💰✨
+20,TC077_Humorous,"as a marketing person, create a regular saving offer headline in Humorous tone in less than 64 characters","Save your pennies, not your sanity! Start a regular savings plan today!"
+21,TC078_formal,"as a marketing person, create a premier saving offer headline in formal tone in less than 64 characters",Exclusive Savings Offer: Limited Time Only!
+22,TC079_cheerful,"as a marketing person, create a premier saving offer headline in cheerful tone in less than 64 characters",Save big with our exclusive premier savings offer!
+23,TC080_Humorous,"as a marketing person, create a premier saving offer headline in Humorous tone in less than 64 characters",Save big bucks with our premier deal - your wallet will thank you!
+24,TC087_formal,"as a marketing person, create a ISA saving offer headline in formal tone in less than 64 characters",Maximize Your Savings Potential with Our Competitive ISA Offer!
+25,TC088_cheerful,"as a marketing person, create a ISA saving offer headline in cheerful tone in less than 64 characters",Start saving smart with our high-interest ISA offer!
+26,TC089_Humorous,"as a marketing person, create a ISA saving offer headline in Humorous tone in less than 64 characters",Save like a boss with our ISA offer - because who needs a piggy bank anyway?
+27,TC090_formal,"as a marketing person, create a investment offer headline in formal tone in less than 64 characters",Maximize Your Returns with Our Exclusive Investment Opportunity
+28,TC091_cheerful,"as a marketing person, create a investment offer headline in cheerful tone in less than 64 characters",Unlock Your Financial Future with Our Exciting Investment Opportunity!
+29,TC092_Humorous,"as a marketing person, create a investment offer headline in Humorous tone in less than 64 characters","Double your money, half the stress - invest with us today!"
+30,TC093_formal,"as a marketing person, create a premier investment offer headline in formal tone in less than 64 characters",Exclusive Investment Opportunity: Unlock Your Financial Potential Today
+31,TC094_cheerful,"as a marketing person, create a premier investment offer headline in cheerful tone in less than 64 characters",Unlock Your Financial Future with Our Exclusive Investment Opportunity!
+32,TC095_Humorous,"as a marketing person, create a premier investment offer headline in Humorous tone in less than 64 characters",Get rich quick (or at least try) with our premier investment offer!
+33,TC096_formal,"as a marketing person, create a Pension investment offer headline in formal tone in less than 64 characters",Secure Your Future with Our Pension Investment Plan
+34,TC097_cheerful,"as a marketing person, create a Pension investment offer headline in cheerful tone in less than 64 characters",Secure your future with our joyful pension investment plan!
+35,TC098_Humorous,"as a marketing person, create a Pension investment offer headline in Humorous tone in less than 64 characters",Secure your future with our pension plan - because retirement isn't for sissies!
